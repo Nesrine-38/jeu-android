@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:text="Arithmetic Game"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#2196F3"
+        android:fontFamily="@font/atomic_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/timer_txt"
+        android:layout_centerHorizontal="true"
+        android:textSize="80dp"
+        android:hint="5"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:id="@+id/l1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nbr1"
+            android:hint="0"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/operation"
+            android:hint="+"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/nbr2"
+            android:hint="0"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/resp1"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/resp2"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/resp3"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:layout_alignRight="@id/l2"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/atomic_age"
+        android:hint="Score : 0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="Start"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
